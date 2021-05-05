@@ -30,7 +30,7 @@ public class CadAluno {
 		//processamentos
 		
 		//saidas
-		
+		leia.close();
 	}
 
 }

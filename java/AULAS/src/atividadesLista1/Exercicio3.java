@@ -1,4 +1,4 @@
-package exemplos;
+package atividadesLista1;
 
 import java.util.Scanner;
 

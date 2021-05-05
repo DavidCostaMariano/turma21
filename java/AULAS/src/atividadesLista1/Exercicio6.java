@@ -1,4 +1,4 @@
-package exemplos;
+package atividadesLista1;
 import java.util.Scanner;
 public class Exercicio6 {
 public static void main (String[]args)
@@ -26,6 +26,6 @@ public static void main (String[]args)
 	distanciaY = Math.pow((y2 - y1),2);
 	dTotal = Math.sqrt(distanciaX+distanciaY);
 	System.out.printf("A distancia total é : %.2f ",dTotal);
-	
+leia.close();	
 }
 }
