@@ -15,7 +15,7 @@ import java.util.Scanner;
 		System.out.print("Insira o valor do terceiro numero: ");
 		numero3 = leia.nextDouble();
 		
-		if(numero1 > numero2 && numero1>numero3 &&numero2> numero3)
+		if(numero1 >= numero2 && numero1>=numero3 && numero2>=numero3)
 		{
 			System.out.println("A sequencia crescente é: ");
 			System.out.println(numero3);
@@ -29,28 +29,28 @@ import java.util.Scanner;
 			System.out.println(numero3);
 			System.out.println(numero1);
 		}
-		else if (numero2> numero1 && numero2> numero3 &&numero3>numero1)
+		else if (numero2>=numero1 && numero2>=numero3 &&numero3>=numero1)
 		{
 			System.out.println("A sequencia crescente é: ");
 			System.out.println(numero1);
 			System.out.println(numero3);
 			System.out.println(numero2);
 		}
-		else if (numero2> numero1 && numero2> numero3 &&numero1>numero3)
+		else if (numero2>= numero1 && numero2>= numero3 &&numero1>=numero3)
 		{
 			System.out.println("A sequencia crescente é: ");
 			System.out.println(numero3);
 			System.out.println(numero1);
 			System.out.println(numero2);
 		}
-		else if (numero3> numero2 && numero3> numero1 &&numero2>numero1)
+		else if (numero3>= numero2 && numero3>= numero1 &&numero2>=numero1)
 		{
 			System.out.println("A sequencia crescente é: ");
 			System.out.println(numero1);
 			System.out.println(numero2);
 			System.out.println(numero3);
 		}
-		else if (numero3> numero1 && numero3> numero2 &&numero1>numero2)
+		else if (numero3>= numero1 && numero3>= numero2 &&numero1>=numero2)
 		{
 			System.out.println("A sequencia crescente é: ");
 			System.out.println(numero2);
