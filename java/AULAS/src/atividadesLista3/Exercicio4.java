@@ -23,23 +23,23 @@ public static void main(String []args)
 	
 		
 		System.out.print("Insira a letra correspondente ao genero que você se identifica M/F/O: ");
-		opcaoGenero = leia.next().charAt(0);
-		System.out.print("Você se considera uma pessoa 1 - calma, 2 - nervosa ou 3 - agressiva");
+		opcaoGenero = leia.next().toUpperCase().charAt(0);
+		System.out.print("Você se considera uma pessoa:\n1 - calma\n2 - nervosa\n3 - agressiva ");
 		caracteristica = leia.nextInt();
 		
 		if(caracteristica == 1) 
 		{
 			pessoasCalmas++;
 		}
-		if(caracteristica == 2 && opcaoGenero =='f' || caracteristica == 2 && opcaoGenero =='f') 
+		if(caracteristica == 2 && opcaoGenero =='F') 
 		{
 				qtdMulheresNervosas++;
 		}
-		if(caracteristica == 3 && opcaoGenero =='m' || caracteristica == 3 && opcaoGenero =='M' )
+		if(caracteristica == 3 && opcaoGenero =='M')
 		{
 			qtdHomensAgressivos++;
 		}
-		if(caracteristica == 1 && opcaoGenero =='o' || caracteristica == 1 && opcaoGenero =='O')
+		if(caracteristica == 1 && opcaoGenero =='O')
 		{
 			outrosCalmos++;
 		}
