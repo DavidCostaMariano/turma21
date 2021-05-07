@@ -5,7 +5,6 @@ public static void main(String []args) {
 	Scanner leia = new Scanner (System.in);
 	int numeros[]= new int [6];
 	int somaPar = 0;
-	int somaImpar = 0;
 	int qtdNumerosImpares=0;
 	System.out.println("Insira o valor dos 6 numeros desejados");
 	
@@ -23,12 +22,10 @@ public static void main(String []args) {
 		else 
 		{
 			qtdNumerosImpares++;
-			somaImpar += numeros[x];
 		}
 		
 	}
+	System.out.printf("A soma dos valores pares é: %d",somaPar);
 	System.out.printf("\nA quantidade de numeros impares digitados é: %d",qtdNumerosImpares);
-	
-	
 	}
 }
