@@ -6,6 +6,8 @@ public static void main (String[]args) {
 	double matriz[][] = new double [2][2];
 	double matriz2[][] = new double [2][2];
 	double matriz3[][] = new double [2][2];
+	double matriz4[][] = new double [2][2];
+	
 	char op;
 	System.out.println("Insira os valores da matriz: ");
 	
@@ -29,7 +31,7 @@ public static void main (String[]args) {
 	}
 	do
 	{
-	System.out.println("O que você deseja fazer com os valores?\n1 - SOMAR AS DUAS MATRIZES \n2 - SUBTRAIR A PRIMEIRA DA SEGUNDA MATRIZ\n3 - ADICIONAR UMA CONSTANTE AS DUAS MATRIZES\n4 - IMPRIMIR AS MATRIZES\n DIGITE O NUMERO DESEJADO: ");
+	System.out.println("O que você deseja fazer com os valores?\n1 - SOMAR AS DUAS MATRIZES \n2 - SUBTRAIR A PRIMEIRA DA SEGUNDA MATRIZ\n3 - ADICIONAR UMA CONSTANTE AS DUAS MATRIZES\n4 - IMPRIMIR AS MATRIZES\nDIGITE O NUMERO DESEJADO: ");
 	op = leia.next().toUpperCase().charAt(0);
 	if(op == '1')
 	{
@@ -48,7 +50,7 @@ public static void main (String[]args) {
 			System.out.print("]");
 			System.out.print("\n");
 		}
-		break;
+		
 	}
 	else if(op =='2')
 	{
@@ -60,40 +62,79 @@ public static void main (String[]args) {
 			for(int coluna=0;coluna<2;coluna++)
 			{
 				
-				matriz3[linha][coluna]= matriz[linha][coluna]-matriz2[linha][coluna];
-				System.out.print(matriz3[linha][coluna]+"\t");
+				matriz4[linha][coluna]= matriz[linha][coluna]-matriz2[linha][coluna];
+				System.out.print(matriz4[linha][coluna]+"\t");
 			}
 			System.out.print("]");
 			System.out.print("\n");
 			
 		}
-		break;
+		
 	}
 	else if(op =='3')
 	{
-		break;
+		System.out.print("Digite o valor da constante: ");
+		final double VALOR = leia.nextDouble();
+		for (int linha=0;linha<2; linha++) 
+		{
+			for (int coluna = 0; coluna<2; coluna++) 
+			{
+				matriz[linha][coluna]+=VALOR;
+				matriz2[linha][coluna]+=VALOR;
+			}
+		}
+		
+		
 	}
 	
 	else if(op =='4')
-	{
+	{System.out.println("Matriz 1:");
 		for(int linha=0; linha <2; linha++) 
 		{
-			System.out.print("[\t");
+			System.out.print("[");
+			
 			for(int coluna=0;coluna<2;coluna++)
 			{
-				System.out.print(matriz[linha][coluna]);
+				System.out.print(matriz[linha][coluna]+"  ");
 				
 			}
 			System.out.print("]");
 			System.out.print("\n");
 		}
-		System.out.println("\n");
+		
+		
+		System.out.println("\nMatriz 2:");
 		for(int linha=0; linha <2; linha++) 
 		{
-			System.out.print("[\t");
+			System.out.print("[");
 			for(int coluna=0;coluna<2;coluna++)
 			{
-				System.out.print(matriz2[linha][coluna]);
+				System.out.print(matriz2[linha][coluna]+"  ");
+			}
+			System.out.print("]");
+			System.out.print("\n");
+		}
+		
+		System.out.println("\nMatriz 3:");
+		for(int linha=0; linha <2; linha++) 
+		{
+			System.out.print("[");
+			for(int coluna=0;coluna<2;coluna++)
+			{
+				System.out.print(matriz3[linha][coluna]+"  ");
+			}
+			System.out.print("]");
+			System.out.print("\n");
+			
+		}
+		System.out.println("\nMatriz 4:");
+		for(int linha=0; linha <2; linha++) 
+		{
+			
+			System.out.print("[");
+			for(int coluna=0;coluna<2;coluna++)
+			{
+				System.out.print(matriz4[linha][coluna]+"  ");
 			}
 			System.out.print("]");
 			System.out.print("\n");
