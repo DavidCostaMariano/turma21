@@ -144,6 +144,6 @@ public static void main (String[]args) {
 }
 	while(op <1 || op >4);
 	
-
+leia.close();
 }
 }

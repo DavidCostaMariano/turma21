@@ -20,12 +20,14 @@ public static void main(String []args) {
 			somaPar += numeros[x];
 		}
 		else 
-		{
+		{	
+			System.out.printf("\nNumeros impares: %d",numeros[x]);
 			qtdNumerosImpares++;
 		}
 		
 	}
-	System.out.printf("A soma dos valores pares é: %d",somaPar);
+	System.out.printf("\nA soma dos valores pares é: %d",somaPar);
 	System.out.printf("\nA quantidade de numeros impares digitados é: %d",qtdNumerosImpares);
+	leia.close();
 	}
 }

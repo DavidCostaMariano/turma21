@@ -16,7 +16,7 @@ public class Exercicio1 {
 		{
 			numerosvetores++;
 			System.out.printf("\nO valor do vetor %d é: %d",numerosvetores,a[x]);
-			
+			leia.close();
 		}
 	}
 

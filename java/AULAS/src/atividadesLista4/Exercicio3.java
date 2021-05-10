@@ -28,5 +28,6 @@ public static void main (String[]args) {
 	}
 	System.out.print("]");
 	System.out.printf("A matriz possui %d numeros maior que 10",maior10);
+	leia.close();
 }
 }

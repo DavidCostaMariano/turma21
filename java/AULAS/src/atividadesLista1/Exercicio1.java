@@ -1,5 +1,4 @@
 package atividadesLista1;
-
 import java.util.Scanner;
 public class Exercicio1 {
 public static void main (String[]args)
@@ -17,8 +16,9 @@ public static void main (String[]args)
 	dias = leia.nextInt();
 	tempoTotal = ((anos*365)+(meses*30)+dias);
 	System.out.println("Sua idade expressa em dias é: "+tempoTotal);
-leia.close();	
-}
+	leia.close();	
+	
+	}
 
 
 }
