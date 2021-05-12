@@ -6,6 +6,7 @@ public class TesteAnimais {
 	{
 		Scanner leia = new Scanner(System.in);
 		Scanner leiaString = new Scanner (System.in);
+		
 		System.out.print("Insira o nome do cachorro: ");
 		String nome = leia.nextLine().toUpperCase();
 		System.out.print("Informe a idade do cachorro:");

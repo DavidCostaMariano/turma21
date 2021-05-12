@@ -6,6 +6,7 @@ public abstract class Animal {
 	private int idade;
 	private int som;
 	private int correr;
+	
 	public Animal(String nome, int idade) {
 		super();
 		this.nome = nome;
