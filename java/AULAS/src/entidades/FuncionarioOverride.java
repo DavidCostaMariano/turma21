@@ -2,9 +2,9 @@ package entidades;
 
 public class FuncionarioOverride {
 
-	@Override
+	
 	public String toString() {
-		return "Dados do Funcionario:\n---------------------\n\nMatricula:\t\t " + matricula + "\nNome:\t\t\t " + nome + "\nHoras Trabalhadas:\t "+ horasTrabalhadas + "\nSalario Hora:\t\t R$" + salarioHora+"\n--------------------------------------";
+		return "Dados do Funcionario Principal:\n-------------------------------\nMatricula:\t\t " + matricula + "\nNome:\t\t\t " + nome + "\nHoras Trabalhadas:\t "+ horasTrabalhadas + "\nSalario Hora:\t\t R$" + salarioHora+"\n--------------------------------------";
 	}
 	protected String matricula;
 	protected String nome;
@@ -28,7 +28,7 @@ public class FuncionarioOverride {
 	public double mostrarSalario()
 	{
 		
-		System.out.printf("O salario do funcionario é: R$ %.2f\n--------------------------------------\n" , horasTrabalhadas* salarioHora);
+		System.out.printf("O salario do funcionario é: R$%.2f\n--------------------------------------\n" , horasTrabalhadas* salarioHora);
 		return  horasTrabalhadas* salarioHora;
 	}
 	

@@ -3,9 +3,11 @@ package classes;
 public class Basico extends Estudante
 {
 	private int diaAniversario;
+	private String nome;
 
-	public Basico(int matricula, String cpf, int diaAniversario) {
+	public Basico(String nome,int matricula, String cpf, int diaAniversario) {
 		super(matricula, cpf);
+		this.nome = nome;
 		this.diaAniversario = diaAniversario;
 	}
 
@@ -30,5 +32,9 @@ public class Basico extends Estudante
 			super.adicionarNota(super.getPontos()*0.1);
 		}
 	}
+	
 
 }
+
+
+
