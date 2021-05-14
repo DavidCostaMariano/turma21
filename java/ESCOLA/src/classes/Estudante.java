@@ -35,7 +35,7 @@ public class Estudante {
 		this.status = status;
 	}
 	
-	
+
 	public int getMatricula() {
 		return matricula;
 	}
@@ -78,10 +78,6 @@ public class Estudante {
 		this.status = status;
 	}
 	
-	
-	
-	
-
 	public void adicionarNota(double pontos) {
 		this.pontos = this.pontos + pontos;
 	}
