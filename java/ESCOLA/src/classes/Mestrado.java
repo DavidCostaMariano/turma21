@@ -30,17 +30,17 @@ public class Mestrado extends Estudante	 {
 	        public void tirarNota(double pontos) {
 
 	                Scanner leia = new Scanner(System.in);
-	                double nota =  pontos;
+	                
 
-	                while (nota > (super.getPontos()+creditoMestrado)) {
-	                    System.out.printf("\nImpossível retirar valor %.1f. Pois o total pontos (%.1f) + bonus (%.1f) é menor que a nota de retirada. Informe um valor de retirada valido: ", nota, super.getPontos(), creditoMestrado);
-	                    nota = leia.nextDouble();
+	                while (pontos > (super.getPontos()+creditoMestrado)) {
+	                    System.out.printf("\nImpossível retirar valor %.1f. Pois o total pontos (%.1f) + bonus (%.1f) é menor que a nota de retirada. Informe um valor de retirada valido: ", pontos, super.getPontos(), creditoMestrado);
+	                    pontos = leia.nextDouble();
 	                }
 
-	                if (nota <= super.getPontos()) {
-	                    super.tirarNota(nota);
+	                if (pontos <= super.getPontos()) {
+	                    super.tirarNota(pontos);
 	                }
-	                else if (nota <= super.getPontos()+creditoMestrado) usarCreditoMestrado(nota);
+	                else if (pontos <= super.getPontos()+creditoMestrado) usarCreditoMestrado(pontos);
 
 	                //leia.close();
 
